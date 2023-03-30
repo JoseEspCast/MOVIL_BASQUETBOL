@@ -5,6 +5,9 @@ import 'package:basquetbol/paginas/tabla_partidos.dart';
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
+
+
+
 class Home extends StatefulWidget {
   const Home({super.key});
 

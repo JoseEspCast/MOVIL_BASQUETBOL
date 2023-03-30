@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
 class partido extends StatelessWidget {
-   partido({super.key});
-  final colorfondo = Color.fromARGB(255, 1, 17, 243) ;
+  partido({super.key});
+  final colorfondo = Color.fromARGB(255, 1, 17, 243);
+  final colorTexto = Colors.black;
+  final colorEtiqueta =  Color.fromARGB(255, 233, 121, 29);
 
 
   @override
   Widget build(BuildContext context) {
     String Torneo,
-         Edicion,
+        Edicion,
         Rama,
         categoria,
         equipo1,
@@ -39,7 +41,7 @@ class partido extends StatelessWidget {
           'TORNEO ${Torneo} ${Edicion}',
           textAlign: TextAlign.center,
           style: TextStyle(
-            color: Colors.white,
+            color:colorTexto,
             fontSize: 24,
           ),
         ),
@@ -48,16 +50,14 @@ class partido extends StatelessWidget {
         children: [
           //TEXTO  HORARIO
           Expanded(
-        
             flex: 0,
             child: Container(
-              
-              color: Color.fromARGB(255, 233, 121, 29),
+              color: colorEtiqueta,
               child: Center(
                 child: Text(
                   'HORARIO',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 0, 0, 0),
+                    color: colorTexto,
                     fontSize: 24,
                   ),
                 ),
@@ -71,13 +71,13 @@ class partido extends StatelessWidget {
             child: Container(
               // color: Color.fromARGB(255, 247, 247, 253),
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 247, 247, 253),
+                color: colorEtiqueta,
               ),
               child: Center(
                 child: Text(
                   ' ${fecha}  ${horario}',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 0, 0, 0),
+                    color: colorTexto,
                     fontSize: 24,
                   ),
                 ),
@@ -89,12 +89,12 @@ class partido extends StatelessWidget {
           Expanded(
             flex: 0,
             child: Container(
-              color: Color.fromARGB(255, 233, 121, 29),
+              color: colorEtiqueta,
               child: Center(
                 child: Text(
                   'RESULTADOS',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 0, 0, 0),
+                    color: colorTexto,
                     fontSize: 24,
                   ),
                 ),
@@ -109,7 +109,7 @@ class partido extends StatelessWidget {
                 child: Text(
                   '${equipo1} :  ${equipo1puntos}',
                   style: TextStyle(
-                    color: Colors.black,
+                    color: colorTexto
                     fontSize: 24,
                   ),
                 ),
@@ -124,7 +124,7 @@ class partido extends StatelessWidget {
                 child: Text(
                   '${equipo2} : ${equipo2puntos}',
                   style: TextStyle(
-                    color: Colors.black,
+                    color: colorTexto,
                     fontSize: 24,
                   ),
                 ),
@@ -136,12 +136,12 @@ class partido extends StatelessWidget {
           Expanded(
             flex: 0,
             child: Container(
-              color: Color.fromARGB(255, 233, 121, 29),
+              color: colorEtiqueta,
               child: Center(
                 child: Text(
                   'FALTAS',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 0, 0, 0),
+                    color: colorTexto,
                     fontSize: 24,
                   ),
                 ),
@@ -156,7 +156,7 @@ class partido extends StatelessWidget {
                 child: Text(
                   'Fila 6',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: colorTexto,
                     fontSize: 24,
                   ),
                 ),
