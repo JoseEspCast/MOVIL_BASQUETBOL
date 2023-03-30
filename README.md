@@ -1,2 +1,2 @@
-# MOVIL_BASQUETBOL
- Aplicacion de movil para basquetbol
+# basquetbol
+ aplicacion web para usuarios que miraran el partido 
