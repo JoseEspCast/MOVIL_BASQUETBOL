@@ -109,7 +109,7 @@ class partido extends StatelessWidget {
                 child: Text(
                   '${equipo1} :  ${equipo1puntos}',
                   style: TextStyle(
-                    color: colorTexto
+                    color: colorTexto,
                     fontSize: 24,
                   ),
                 ),
