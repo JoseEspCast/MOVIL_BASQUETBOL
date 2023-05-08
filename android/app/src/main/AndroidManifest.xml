@@ -1,18 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.basquetbol">
+
+      <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="basquetbol"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
 
-  <!-- TODO: Add your Google Maps API key here -->
-        <meta-data android:name="com.google.android.geo.API_KEY"
-               android:value="YOUR-KEY-HERE"/>
-
-
-
-
-
+ 
 
 
 
