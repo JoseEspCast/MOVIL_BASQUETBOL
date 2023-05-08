@@ -39,10 +39,11 @@ class partido extends StatelessWidget {
         backgroundColor: colorfondo,
         title: Text(
           'TORNEO ${Torneo} ${Edicion}',
-          textAlign: TextAlign.center,
+          
           style: TextStyle(
             color:colorTexto,
             fontSize: 24,
+            
           ),
         ),
       ),
